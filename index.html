@@ -12,9 +12,6 @@
 	<meta name="author" content="Max Grinberg">
 	<link rel="shortcut icon" href="assets/images/favicon.png">
 
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-
 	<!-- FontAwesome JS-->
 	<script defer src="assets/fontawesome/js/all.min.js"></script>
 
@@ -29,6 +26,22 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-171644585-1');
+	</script>
+
+	<!-- Async fonts load -->
+	<script>
+		WebFontConfig = {
+			google: {
+				families: ['Roboto:300,400,500,700,900']
+			}
+		};
+
+		(function (d) {
+			var wf = d.createElement('script'), s = d.scripts[0];
+			wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+			wf.async = true;
+			s.parentNode.insertBefore(wf, s);
+		})(document);
 	</script>
 </head>
 
